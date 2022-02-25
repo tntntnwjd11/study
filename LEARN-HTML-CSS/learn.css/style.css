@@ -1,0 +1,8 @@
+/* 외부스타일 */
+h1 {
+  color: blue;
+}
+.acticle {
+  border: 1px solid black;
+  padding: 30px;
+}
