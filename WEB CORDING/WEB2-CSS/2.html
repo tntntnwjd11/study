@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.html</title>
+    <style>
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 45px;
+        border-bottom: 1px solid gray;
+        text-align: center;
+        margin: 0px;
+        padding: 20px;
+      }
+      #grid ol {
+        border-right: 1px solid gray;
+        width: 100px;
+        margin: 0px;
+        padding: 32px;
+      }
+      #grid #article {
+        padding-left: 25px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      body {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ol>
+      <div id="article">
+        <h2>CSS</h2>
+        <p>
+          Cascading Style Sheets (CSS) is a style sheet language used for
+          describing the presentation of a document written in a markup language
+          such as HTML. CSS is a cornerstone technology of the World Wide Web,
+          alongside HTML and JavaScript.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
