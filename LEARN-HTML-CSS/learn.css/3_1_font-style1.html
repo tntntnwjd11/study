@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Font Stlye1</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap");
+      /* {margin: 0px
+        padding: 0px
+      } */
       html {
         /* font-family: serif, monospace; */
+        font-family: "Gaegu", cursive;
+        font-size: 16px;
       }
       .title {
         font-size: 28px;
+        color: #155b99c5;
       }
       .content {
         font-size: 18px;
@@ -26,6 +33,28 @@
       }
       .font-variant {
         font-variant: small-caps;
+      }
+      .subtitle {
+        font-size: 20px;
+      }
+      .subtitle-rem {
+        font-size: 2rem;
+      }
+      .subtitle-em {
+        font-size: 2em;
+      }
+      .article {
+        font-size: 10px;
+      }
+      .rectangle.width {
+        width: 20vw;
+        height: 100px;
+        background-color: yellow;
+      }
+      .rectangle.height {
+        height: 20vh;
+        width: 100px;
+        background-color: blue;
       }
     </style>
   </head>
@@ -44,5 +73,19 @@
       뽀뽀, 후추의 일상을 담은 영상을 만들어가는 채널입니다.
     </p>
     <p class="content font-variant">HELLO, soojung</p>
+    <hr />
+    <h2>px</h2>
+    <p class="subtitle">김종엽은 코로나에 걸렸습니다.</p>
+    <h2>rem</h2>
+    <p class="subtitle-rem">김종엽은 코로나에 걸렸습니다.</p>
+    <h2>em</h2>
+    <div class="article">
+      <p class="subtitle-em">김종엽은 코로나에 걸렸습니다.</p>
+    </div>
+    <!-- Viewport width -->
+    <h2>vw</h2>
+    <div class="rectangle width"></div>
+    <h2>vh</h2>
+    <div class="rectangle height"></div>
   </body>
 </html>
