@@ -5,6 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>web2-javascript</title>
+    <script>
+      function nigthDayhandler(self) {
+        var target = document.querySelector("body");
+        if (self.value === "nigth") {
+          target.style.backgroundColor = "black";
+          target.style.color = "white";
+          self.value = "day";
+
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "powderblue";
+            i = i + 1;
+          }
+        } else {
+          target.style.backgroundColor = "white";
+          target.style.color = "black";
+          self.value = "nigth";
+
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "blue";
+            i = i + 1;
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
@@ -12,19 +40,14 @@
       id="nigth_day"
       type="button"
       value="nigth"
-      onclick=" 
-      if(document.querySelector('#nigth_day').value==='nigth') {
-        document.querySelector('body').style.backgroundColor='black'
-        document.querySelector('body').style.color='white' 
-        document.querySelector('#nigth_day').value='day'
-      }
-      else {
-        document.querySelector('body').style.backgroundColor='white'
-        document.querySelector('body').style.color='black'
-        document.querySelector('#nigth_day').value='nigth'
-      }"
+      onclick="nigthDayhandler(this);"
     />
-
+    <input
+      id="nigth_day"
+      type="button"
+      value="nigth"
+      onclick="nigthDayhandler(this);"
+    />
     <ol>
       <li><a href="1.html">HTML</a></li>
       <li><a href="2.css">CSS</a></li>
@@ -41,5 +64,37 @@
       dynamic language, supporting object-oriented, imperative, and declarative
       (e.g. functional programming) styles. Read more about JavaScript.
     </p>
+
+    <input
+      type="button"
+      value="nigth"
+      onclick=" 
+      if(this.value==='nigth') {
+        document.querySelector('body').style.backgroundColor='black'
+        document.querySelector('body').style.color='white' 
+        this.value='day'
+      }
+      else {
+        document.querySelector('body').style.backgroundColor='white'
+        document.querySelector('body').style.color='black'
+        this.value='nigth'
+      }"
+    />
+
+    <input
+      type="button"
+      value="nigth"
+      onclick=" 
+      if(this.value==='nigth') {
+        document.querySelector('body').style.backgroundColor='black'
+        document.querySelector('body').style.color='white' 
+        this.value='day'
+      }
+      else {
+        document.querySelector('body').style.backgroundColor='white'
+        document.querySelector('body').style.color='black'
+        this.value='nigth'
+      }"
+    />
   </body>
 </html>
