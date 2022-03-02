@@ -6,42 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>web2-javascript</title>
     <script>
+      function LinksSetColor(color) {
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while (i < alist.length) {
+          alist[i].style.color = color;
+          i = i + 1;
+        }
+      }
+      function BodySetColor(color) {
+        document.querySelector('body').style.color = color;
+      }
+      function BodySetBackgroundColor(color) {
+        document.querySelector('body').style.backgroundColor = color;
+      }
       function nigthDayhandler(self) {
-        var target = document.querySelector("body");
-        if (self.value === "nigth") {
-          target.style.backgroundColor = "black";
-          target.style.color = "white";
-          self.value = "day";
+        var target = document.querySelector('body');
+        if (self.value === 'nigth') {
+          Body.setBackgroundColor = ('black');
+          Body.setColor('white');
+          self.value = 'day';
 
-          var alist = document.querySelectorAll("a");
-          var i = 0;
-          while (i < alist.length) {
-            alist[i].style.color = "powderblue";
-            i = i + 1;
-          }
+          Links.SetColor('powderblue')
         } else {
-          target.style.backgroundColor = "white";
-          target.style.color = "black";
-          self.value = "nigth";
+          Body.setBackgroundColor = ('white');
+          Body.setColor('black');
+          self.value = 'nigth';
 
-          var alist = document.querySelectorAll("a");
-          var i = 0;
-          while (i < alist.length) {
-            alist[i].style.color = "blue";
-            i = i + 1;
-          }
+          Links.setColor('blue');
         }
       }
     </script>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
-    <input
-      id="nigth_day"
-      type="button"
-      value="nigth"
-      onclick="nigthDayhandler(this);"
-    />
     <input
       id="nigth_day"
       type="button"
@@ -65,36 +63,5 @@
       (e.g. functional programming) styles. Read more about JavaScript.
     </p>
 
-    <input
-      type="button"
-      value="nigth"
-      onclick=" 
-      if(this.value==='nigth') {
-        document.querySelector('body').style.backgroundColor='black'
-        document.querySelector('body').style.color='white' 
-        this.value='day'
-      }
-      else {
-        document.querySelector('body').style.backgroundColor='white'
-        document.querySelector('body').style.color='black'
-        this.value='nigth'
-      }"
-    />
-
-    <input
-      type="button"
-      value="nigth"
-      onclick=" 
-      if(this.value==='nigth') {
-        document.querySelector('body').style.backgroundColor='black'
-        document.querySelector('body').style.color='white' 
-        this.value='day'
-      }
-      else {
-        document.querySelector('body').style.backgroundColor='white'
-        document.querySelector('body').style.color='black'
-        this.value='nigth'
-      }"
-    />
   </body>
 </html>
