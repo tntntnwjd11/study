@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>의사클래스(가상클래스)</title>
+    <style>
+      [type="button"] {
+        width: 100px;
+        height: 30px;
+        color: white;
+        background-color: rgb(209, 110, 127);
+        border: none;
+        border-radius: 10px;
+      }
+      [type="button"]:hover {
+        background-color: gray;
+      }
+      [type="button"]:active {
+        background-color: black;
+      }
+      input:focus {
+        background-color: pink;
+        color: white;
+      }
+      input:disabled {
+        height: 100px;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        color: white;
+      }
+      .box:nth-child(3) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="button" value="버튼" />
+    <hr />
+    <input type="text" placeholder="아무거나 쓰기" />
+    <hr />
+    <input type="text" placeholder="비활성화상태" disabled />
+    <hr />
+    <div>
+      <div class="box">1번</div>
+      <div class="box">2번</div>
+      <div class="box">3번</div>
+      <div class="box">4번</div>
+      <div class="box">5번</div>
+    </div>
+  </body>
+</html>
