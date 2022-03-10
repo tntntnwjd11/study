@@ -7,16 +7,16 @@
     <title>Selector Combination</title>
     <style>
       /* 자손 결합자 */
-      /* section li {
-        color: blue;
+      section li {
+        color: red;
       }
       section span {
-        color: red;
-      } */
+        color: blueviolet;
+      }
 
-      /* 자손 결합자 */
-      ul > li {
-        color: violet;
+      /* 자식 결합자 */
+      section > ul > li {
+        color: blue;
       }
 
       /* 일반 형제 결합자 */
@@ -26,10 +26,12 @@
 
       /* 인접 형제 결합자 */
       p + code {
-        font-size: 30px;
+        font-size: 25px;
+        color: aqua;
       }
+
       .first + li {
-        color: blue;
+        color: pink;
       }
     </style>
   </head>
