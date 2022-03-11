@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position 포지션</title>
+    <style>
+      .a {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        top: 50px;
+        left: 100px;
+      }
+
+      .b {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        position: relative;
+        border: 1px solid black;
+      }
+
+      .ab {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        top: 0px;
+      }
+      /* .pos {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        position: fixed;
+        top: 50px;
+        left: 80px;
+      } */
+
+      .pos {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        position: sticky;
+        bottom: 0px;
+        left: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="a"></div>
+      <p>heeeeeeeheeeeee</p>
+    </div>
+    <div>
+      <div class="b"></div>
+      <div class="b">
+        <div class="ab"></div>
+        <p>ppppppp</p>
+      </div>
+    </div>
+    <div>
+      <div class="cc">
+        첫번째<br />첫번째<br />첫번째<br />첫번째<br />첫번째<br />
+        첫번째<br />첫번째<br />첫번째<br />첫번째<br />첫번째<br />
+        첫번째<br />첫번째<br />첫번째<br />첫번째<br />첫번째<br />
+        첫번째<br />첫번째<br />첫번째<br />첫번째<br />첫번째<br />
+        첫번째<br />첫번째<br />첫번째<br />첫번째<br />첫번째<br />
+        첫번째<br />첫번째<br />첫번째<br />첫번째<br />첫번째<br />
+        첫번째<br />첫번째<br />첫번째<br />첫번째<br />첫번째<br />
+        첫번째<br />첫번째<br />첫번째<br />첫번째<br />첫번째<br />
+      </div>
+      <div class="pos"></div>
+      <div class="cc">
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+        두번째<br />두번째<br />두번째<br />두번째<br />두번째<br />
+      </div>
+    </div>
+  </body>
+</html>
