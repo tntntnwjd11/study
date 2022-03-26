@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 선택자</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1:hover {
+            background-color: silver;
+        }
+
+        h1 span:hover {
+            color: blue;
+        }
+
+        a,
+        input,
+        button {
+            outline: none;
+        }
+
+        a:focus,
+        input:focus,
+        button:focus {
+            background-color: silver;
+        }
+
+        a:active {
+            background-color: black;
+            color: white;
+        }
+
+        a:visited {
+            color: silver;
+        }
+
+        /* a:hover, a:focus, a:visited{
+            color: green;
+        } 이렇게 사용하면 안됨, 이렇게도 쓸 수 있구나 정도로 이해하기*/
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo <span>Selector</span></h1>
+    <a href="">link</a>
+    <a href="" target="_self">link</a>
+    <a href="" target="_blank">naver</a>
+    <a href="" target="_blank">daum</a>
+    <form>
+        <input type="text" />
+        <button>전송</button>
+    </form>
+</body>
+
+</html>

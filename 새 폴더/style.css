@@ -1,0 +1,21 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu {
+  background-color: rgb(157, 157, 157);
+  overflow: hidden;
+}
+
+.menu a {
+  font-size: 20px;
+  padding: 12px;
+  float: left;
+}
+.menu a:hover {
+  background-color: black;
+}
+a:first-of-type {
+  background-color: teal;
+}

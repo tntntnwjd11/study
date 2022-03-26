@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nth-child selector</title>
+    <style>
+        /*
+    nav ul li:first-child,
+    nav ul li:nth-child(3),
+    nav ul li:last-child{
+        background-color: silver;
+    } 
+    2n = 2*0, 2*1, 2*2 .... 짝수마다
+    2n+1 = 1,3,5,7,9 .... 홀수마다
+
+    nav ul li:nth-child(2n+1){
+        background-color: aquamarine;
+    }
+    
+    nav ul li:nth-child(odd){
+        background-color: aquamarine;
+    }
+    
+    nav ul li:nth-child(n+3){
+        background-color: aquamarine;
+    }
+    
+
+    nav ul li:nth-child(-n+3){
+        background-color: aquamarine;
+    }
+    
+    nav ul li:nth-child(n+2):nth-child(-n+5){
+        background-color: aquamarine;
+    }
+    */
+
+        nav ul li+li {
+            background-color: silver;
+        }
+
+        h2:nth-of-type(2) {
+            background-color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>구조 선택자</h1>
+    <nav>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+        </ul>
+    </nav>
+    <hr />
+    <h2>heading 2</h2>
+    <h2>heading 2</h2>
+    <h2>heading 2</h2>
+    <h2>heading 2</h2>
+    <h2>heading 2</h2>
+</body>
+
+</html>
