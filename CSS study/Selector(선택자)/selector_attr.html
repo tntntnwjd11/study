@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attr  Selector</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attr Selector</title>
     <style>
-        input[type="email"]{
+        input[type="email"] {
             background-color: silver;
         }
-        [target]{
+
+        [target] {
             text-decoration: none;
         }
-        a[target="_blank"]{
+
+        a[target="_blank"] {
             color: red;
         }
-        h2[class^="main"]{
+
+        h2[class^="main"] {
             color: blue;
         }
     </style>
 </head>
+
 <body>
     <h1>Attr(속성) selector</h1>
     <form action>
-        <input type="text" placeholder="name">
-        <input type="email" placeholder="email">
+        <input type="text" placeholder="name" />
+        <input type="email" placeholder="email" />
     </form>
-    <hr>
+    <hr />
     <h2 class="maint-tt1">title1</h2>
     <h2 class="maint-tt2">title2</h2>
     <h2 class="content-tt2">title</h2>
-    <hr>
+    <hr />
     <a href="">link</a>
     <a href="" target="_self">link</a>
     <a href="" target="_blank">naver</a>
     <a href="" target="_blank">daum</a>
 </body>
+
 </html>

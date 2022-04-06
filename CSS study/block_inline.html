@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>block, inline</title>
+  <style>
+    h1 {
+      background-color: blue;
+      color: #fff;
+      width: 300px;
+      display: inline;
+    }
+
+    span {
+      background-color: blue;
+      color: #fff;
+      width: 300px;
+      display: block;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    p a {
+      background-color: blue;
+      color: #fff;
+      text-decoration: none;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      line-height: 40px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .hide {
+      visibility: hidden;
+    }
+
+    div i {
+      display: list-item;
+    }
+
+    .services {
+      display: table;
+      width: 800px;
+      border: 1px solid;
+    }
+
+    .services div {
+      display: table-cell;
+      width: 50%;
+    }
+
+    .overflow {
+      text-align: left;
+      background-color: silver;
+      border: 1px solid;
+      height: 100px;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>heading 1</h1>
+  <span>span tag</span>
+
+  <div class="hidden">hidden area</div>
+  <h2 class="hide">heading 2</h2>
+
+  <p>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+  </p>
+  <div>
+    <i> list</i>
+    <i> list</i>
+    <i> list</i>
+    <i> list</i>
+  </div>
+  <div class="services">
+    <div>mobile</div>
+    <div>web application</div>
+  </div>
+  <p class="overflow">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+    Lorem Ipsum.
+  </p>
+</body>
+
+</html>
