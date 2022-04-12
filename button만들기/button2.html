@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        width: 150px;
+        height: 50px;
+        color: ivory;
+        background: rgba(199, 51, 51, 0.7);
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 5px 20px rgba(221, 68, 68, 0.3);
+        transition: 0.5s;
+      }
+      button:focus {
+        outline: none;
+      }
+      button:hover {
+        background: rgba(221, 68, 68, 0.575);
+        cursor: pointer;
+        box-shadow: 0 5px 20px rgba(221, 68, 68, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <button>클릭</button>
+  </body>
+</html>
